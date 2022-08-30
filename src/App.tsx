@@ -2,7 +2,7 @@
 function App() {
 
   return (
-  <div>
+  <div className="h-screen bg-black">
     
   </div>
   )
