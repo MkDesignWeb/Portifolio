@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../Assets/Fonts/Roboto-Light.ttf');
+ }
+
+ @font-face {
+    font-family: Roboto-Medium;
+    src: url('../Assets/Fonts/Roboto-Medium.ttf');
+ }
+
+ @font-face {
+    font-family: UniSans;
+    src: url('../Assets/Fonts/Uni Sans Heavy.otf');
+ }

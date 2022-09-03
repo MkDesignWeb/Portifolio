@@ -1,10 +1,9 @@
+import Home from "./Pages/Home"
 
 function App() {
 
   return (
-  <div className="h-screen bg-black">
-    
-  </div>
+  <Home/>
   )
 }
 
