@@ -6,15 +6,19 @@ import { LoadBar } from "./LoadBar";
 
 import BrilhoMobile from "../Assets/SVG/Brilho-mobile.svg"
 import Brilho from "../Assets/SVG/Brilho.svg"
+import { useNavigate} from "react-router-dom";
 
 interface Props {
     logo: string,
     desc: string,
     title: string,
-    position: 'Baixo' | 'Cima'
+    position: 'Baixo' | 'Cima',
+    link: string
 }
 
-export function BottonPortifolio({logo, desc, title, position}: Props){
+export function BottonPortifolio({logo, desc, title, position, link}: Props){
+
+    const navigate = useNavigate()
 
     const { width } = useWindowDimensions()
     const [conter, setConter] = useState(0)
@@ -31,11 +35,18 @@ export function BottonPortifolio({logo, desc, title, position}: Props){
         setConter(0)
     }
 
+    function GoTo(){
+        navigate(`/${link}`)
+    }
+
+    if(conter > 8){
+        navigate(`/${link}`)
+    }
 
     return(
-        <div onTouchStart={StarLoad} onTouchEnd={StopLoad} onTouchCancel={StopLoad} className={`
+        <div onMouseDown={StarLoad} onMouseUp={width > 768 ? GoTo : StopLoad} onTouchStart={StarLoad} onTouchEnd={StopLoad} onTouchCancel={StopLoad} className={`
             md:w-1/2 md:h-screen
-            w-screen h-1/2 relative group flex justify-center items-center  ${position == 'Baixo' ? 'pt-14' : 'pb-14'}`}>
+            w-screen h-1/2 relative group grayscale hover:grayscale-0 transition-all flex justify-center items-center md:p-0  ${position == 'Baixo' ? 'pt-14' : 'pb-14'}`}>
 
                 <ChoseBotton desc={desc} logo={logo} title={title}/>
                 

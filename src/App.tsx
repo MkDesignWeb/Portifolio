@@ -1,9 +1,8 @@
-import Home from "./Pages/Home"
+import { Rotas } from "./Routes/Rotas"
 
 function App() {
-
   return (
-  <Home/>
+  <Rotas/>
   )
 }
 

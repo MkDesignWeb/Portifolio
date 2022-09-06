@@ -1,18 +1,23 @@
 import LogoW from "../Assets/Logo/Logo MKW.svg"
 import LogoG from "../Assets/Logo/Logo MKG.svg"
+import useWindowDimensions from "../Components/windowDimensions"
 
 import { BottonPortifolio } from "../Components/BottonPortifolio"
+import { Link } from "react-router-dom"
 
 
-export default function App() {
+export function Home() {
 
+    const { width } = useWindowDimensions()
 
     return (
         <section className='
         md:flex-row
         bg-fundo w-screen h-screen overflow-hidden flex flex-col relative'>
 
-            <BottonPortifolio position="Cima" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="FRONT-END" logo={LogoW}/>
+    
+            <BottonPortifolio link="web" position="Cima" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="FRONT-END" logo={LogoW}/>
+     
 
             <div className="
             md:flex-col
@@ -28,8 +33,10 @@ export default function App() {
                 h-[0.1rem] w-full bg-[#2D2D2D] mx-5"/>
             </div>
 
-            <BottonPortifolio position="Baixo" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="D. GRÁFICO" logo={LogoG}/>
+            
+            <BottonPortifolio link="grafico" position="Baixo" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="FRONT-END" logo={LogoW}/>
 
+            
         </section>
     )
 }
