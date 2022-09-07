@@ -16,7 +16,7 @@ export function Home() {
         bg-fundo w-screen h-screen overflow-hidden flex flex-col relative'>
 
     
-            <BottonPortifolio link="web" position="Cima" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="FRONT-END" logo={LogoW}/>
+            <BottonPortifolio link="p-web" position="Cima" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="FRONT-END" logo={LogoW}/>
      
 
             <div className="
