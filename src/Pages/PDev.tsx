@@ -7,8 +7,10 @@ import LogoMKW from '../Assets/Logo/Logo MKW.svg'
 import { Header } from "../Components/Header";
 import { MainBotton } from '../Components/MainBotton';
 
+import { HiChevronDoubleDown } from 'react-icons/hi'
 import { FaUser } from 'react-icons/fa';
 import { SobreMim } from '../Components/SobreMim';
+import { Contato } from '../Components/Contato';
 
 export function PDev() {
 
@@ -21,19 +23,28 @@ export function PDev() {
                 <Header desc="Desenvolvedor Front-END focado em React JS" logo={LogoMKW} />
             </div>
 
-            <div className="h-auto w-full relative z-20">
+            <div className="h-auto w-full relative z-20 mt-20">
 
-                <nav className='w-full flex flex-wrap justify-center  z-30 relative top-9'>
-                    <MainBotton name='Sobre mim' icon={<FaUser />} />
-                    <MainBotton name='Sobre mim' icon={<FaUser />} />
-                    <MainBotton name='Sobre mim' icon={<FaUser />} />
+                <nav className='absolute w-full flex flex-wrap justify-center gap-2 z-30 -top-3'>
+                    <MainBotton name='Contato' icon={<FaUser />} />
+                    <MainBotton name='GitHub' icon={<FaUser />} />
+                    <MainBotton name='Trabalhos' icon={<FaUser />} />
                 </nav>
+
                 <img src={width > 786 ? CurvePc : Curve} alt="" className="h-32 w-full object-cover object-top top-5 lef-0 z-10" />
 
                 <div className='bg-black-scudary relative  w-full h-auto'>
-                    <div className=' mx-auto max-w-[1728px] relative z-20 px-7 md:px-28'>
+                    <div className='relative z-20 px-7 md:px-40 max-w-[1728px]'>
                         <SobreMim />
+
+                        <div className='flex w-full justify-center font-Roboto-Medium mb-10'>
+                            <span className='text-x text-[#2e2e2e]'>Veja mais</span>
+                            <HiChevronDoubleDown size={23} color='#2e2e2e'/>
+                        </div>
+                        
+                        <Contato />
                     </div>
+
                 </div>
             </div>
         </section>
