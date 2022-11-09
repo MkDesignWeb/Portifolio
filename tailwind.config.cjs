@@ -7,13 +7,16 @@ module.exports = {
         'primary': '#5A099D',
         'blck-smoth': '#151515',
         'black-smoth-hover': '#1C1C1C',
-        'black-scudary': '#0C090F',
+        'black-scudary': '#140f1a',
         'fundo': '#050505'
       },
       fontFamily: {
         'Roboto-Light': 'Roboto-Light',
         'Roboto-Medium': 'Roboto-Medium',
         'UniSans': 'UniSans'
+      },
+      backgroundImage: {
+        'BarraDeg': "url('./src/Assets/SVG/BarraDeg.png')"
       }
     },
   },

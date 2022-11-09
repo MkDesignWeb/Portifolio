@@ -34,7 +34,7 @@ export function Home() {
             </div>
 
             
-            <BottonPortifolio link="grafico" position="Baixo" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="FRONT-END" logo={LogoW}/>
+            <BottonPortifolio link="p-graph" position="Baixo" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="D. Gráfico" logo={LogoW}/>
 
             
         </section>
