@@ -11,11 +11,15 @@ import { HiChevronDoubleDown } from 'react-icons/hi'
 import { FaUser } from 'react-icons/fa';
 import { SobreMim } from '../Components/SobreMim';
 import { Contato } from '../Components/Contato';
+import { listAll, listRef } from '../Db/liststorage';
 
 
 export function PGraph() {
 
+
     const { width } = useWindowDimensions()
+
+    
 
     return (
         <section className='max-w-screen overflow-x-hidden bg-fundo'>
@@ -56,3 +60,5 @@ export function PGraph() {
         </section>
     )
 }
+
+console.log(listAll(listRef))

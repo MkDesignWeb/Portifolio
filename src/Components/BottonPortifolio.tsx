@@ -22,7 +22,7 @@ export function BottonPortifolio({logo, desc, title, position, link}: Props){
 
     const { width } = useWindowDimensions()
     const [conter, setConter] = useState(0)
-    const [load, setload] = useState(0)
+    const [load, setload] = useState<any>(0)
         
     
     function StarLoad(){
@@ -39,7 +39,7 @@ export function BottonPortifolio({logo, desc, title, position, link}: Props){
         navigate(`/${link}`)
     }
 
-    if(conter > 8){
+    if(conter > 8 && width < 768){
         navigate(`/${link}`)
     }
 
