@@ -3,7 +3,6 @@ import LogoG from "../Assets/Logo/Logo MKG.svg"
 import useWindowDimensions from "../Components/windowDimensions"
 
 import { BottonPortifolio } from "../Components/BottonPortifolio"
-import { Link } from "react-router-dom"
 
 
 export function Home() {
@@ -34,7 +33,7 @@ export function Home() {
             </div>
 
             
-            <BottonPortifolio link="p-graph" position="Baixo" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="D. Gráfico" logo={LogoW}/>
+            <BottonPortifolio link="p-graph" position="Baixo" desc="De uma olhada nas minhas especificações em desemvolvimento de sites." title="D. Gráfico" logo={LogoG}/>
 
             
         </section>

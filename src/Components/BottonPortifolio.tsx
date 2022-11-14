@@ -26,7 +26,7 @@ export function BottonPortifolio({logo, desc, title, position, link}: Props){
         
     
     function StarLoad(){
-        setload(setInterval(() => {setConter((conter) => conter + 1)}, 300))
+        setload(setInterval(() => {setConter((conter) => conter + 1)}, 150))
     }
     
     function StopLoad(){

@@ -21,10 +21,10 @@ export function Contato(props: props){
     return(
         <>
         <section className='text-white flex flex-col md:flex-row relative'>
-            <div className={` ${props.side == 'rigth' ? 'md:order-0' : 'md:order-1'}`}>
+            <div className={` ${props.side == 'rigth' ? 'md:order-0 text-start' : 'md:order-1 text-end'}`}>
                 <div className={`w-full flex flex-col ${props.side == 'rigth' ? 'items-start' : 'items-end'}`}>
-                    <h1 className="font-Roboto-Medium text-3xl text-end">Entre em <span className="text-primary">contato</span></h1>
-                    <p className="font-Roboto-Light text-sm text-end">Fale comigo diretamente pelo Email ou pelas minhas redes sociais.</p>
+                    <h1 className="font-Roboto-Medium text-3xl ">Entre em <span className="text-primary">contato</span></h1>
+                    <p className="font-Roboto-Light text-sm ">Fale comigo diretamente pelo Email ou pelas minhas redes sociais.</p>
                 </div>
 
                 <div className={`flex ${props.side == 'rigth' ? 'justify-start' : 'justify-end'} my-7 gap-2`}>
