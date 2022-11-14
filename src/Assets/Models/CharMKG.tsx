@@ -33,7 +33,7 @@ type GLTFResult = GLTF & {
 }
 
 export function CharMKG(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/CharMKG.glb') as GLTFResult
+  const { nodes, materials } = useGLTF('src/CharMKG.glb') as GLTFResult
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Untitled.geometry} material={materials.palette} position={[0.07, 0.7, 0.04]} rotation={[1.5, -0.05, 0]} />
