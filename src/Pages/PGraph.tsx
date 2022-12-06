@@ -11,7 +11,6 @@ import { HiChevronDoubleDown } from 'react-icons/hi'
 import { FaUser } from 'react-icons/fa';
 import { SobreMim } from '../Components/SobreMim';
 import { Contato } from '../Components/Contato';
-import { listAll, listRef } from '../Db/liststorage';
 
 
 export function PGraph() {
@@ -61,4 +60,3 @@ export function PGraph() {
     )
 }
 
-console.log(listAll(listRef))
