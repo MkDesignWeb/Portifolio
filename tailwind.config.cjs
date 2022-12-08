@@ -16,7 +16,7 @@ module.exports = {
         'UniSans': 'UniSans'
       },
       backgroundImage: {
-        'BarraDeg': "url('./src/Assets/SVG/BarraDeg.png')"
+        'BarraDeg': "url('./src/Assets/SVG/BarraDeg.svg')"
       }
     },
   },
