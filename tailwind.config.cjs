@@ -14,10 +14,8 @@ module.exports = {
         'Roboto-Light': 'Roboto-Light',
         'Roboto-Medium': 'Roboto-Medium',
         'UniSans': 'UniSans'
-      },
-      backgroundImage: {
-        'BarraDeg': "url('./src/Assets/SVG/BarraDeg.svg')"
       }
+      
     },
   },
   plugins: [],

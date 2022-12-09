@@ -75,10 +75,10 @@ export function EspecRow( props: props ) {
 
 
 
-            <div className={`absolute z-10 w-full h-full bg-BarraDeg bg-contain bg-repeat-y bg-left ${EspecSlect == 0 ? 'opacity-0' : 'opacity-100'} transition-all`}>
+            <div className={`absolute z-10 w-full h-full bg-gradient-to-r from-primary ${EspecSlect == 0 ? 'opacity-0' : 'opacity-100'} transition-all`}>
             </div>
 
-            <div className={`absolute z-10 w-full h-full bg-BarraDeg bg-contain bg-repeat-y bg-left scale-x-[-1] ${EspecSlect == 1 ? 'opacity-0' : 'opacity-100'} transition-all`}></div>
+            <div className={`absolute z-10 w-full h-full bg-gradient-to-r from-primary scale-x-[-1] ${EspecSlect == 1 ? 'opacity-0' : 'opacity-100'} transition-all`}></div>
 
         </div>
     )

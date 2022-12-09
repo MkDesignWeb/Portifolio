@@ -29,7 +29,7 @@ export function CardWeb(props: props) {
         <img src='' className="w-full h-24 md:w-72 md:h-44  rounded-xl overflow-hidden bg-white" />
         
         {props.git || props.link || props.desc ?
-        (<div className='-mt-10 relative opacity-0 md:group-hover:top-0 transition-all md:group-hover:opacity-100 md:group-hover:my-3'>
+        (<div className='hidden md:block -mt-10 relative opacity-0 md:group-hover:top-0 transition-all md:group-hover:opacity-100 md:group-hover:my-3'>
             <div className='flex gap-2'>
                 {props.git ?  (<MainBotton link={props.git} name='Abra no git' icon={<AiFillGithub color='#ffff'/>}/>) : "" }
                 {props.link ?  (<MainBotton link={props.link} name='visite' icon={<BiLinkAlt color='#ffff'/>}/>) : "" }
