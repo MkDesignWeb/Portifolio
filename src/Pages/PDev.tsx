@@ -12,7 +12,7 @@ import { FaUser } from 'react-icons/fa';
 import { SobreMim } from '../Components/SobreMim';
 import { Contato } from '../Components/Contato';
 import { MinhasEspec } from '../Components/MinhasEspec';
-import { Trabalhos } from '../Components/Trabalhos';
+import { TrabalhosWeb } from '../Components/TrabalhosWeb';
 
 export function PDev() {
 
@@ -52,9 +52,8 @@ export function PDev() {
 
                     <MinhasEspec />
 
-                    <Trabalhos />
+                    <TrabalhosWeb />
 
-            
             </div>
         </section>
     )

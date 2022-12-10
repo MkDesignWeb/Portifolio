@@ -45,13 +45,13 @@ export function BottonPortifolio({logo, desc, title, position, link}: Props){
 
     return(
         <div onMouseDown={StarLoad} onMouseUp={width > 768 ? GoTo : StopLoad} onTouchStart={StarLoad} onTouchEnd={StopLoad} onTouchCancel={StopLoad} className={`
-            md:w-1/2 md:h-screen
+            md:w-1/2 md:h-screen 
             w-screen h-1/2 relative group grayscale hover:grayscale-0 transition-all flex justify-center items-center md:p-0  ${position == 'Baixo' ? 'pt-14' : 'pb-14'}`}>
 
                 <ChoseBotton desc={desc} logo={logo} title={title}/>
                 
                     <div className={`
-                    md:hidden
+                    md:hidden pointer-events-none
                     absolute ${position == 'Baixo' ? 'top-14' : 'bottom-14'}  z-20 self-center flex flex-col gap-2 justify-center items-center w-auto
                     `}>
                     <p className="text-white font-Roboto-Light text-xs">Segure aqui</p>

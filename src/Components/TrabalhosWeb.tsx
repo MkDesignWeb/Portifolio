@@ -1,6 +1,6 @@
 import { CardWeb } from "./CardWeb";
 
-export function Trabalhos(){
+export function TrabalhosWeb(){
     return(
         <section className="mt-20 mb-32 relative">
             <div className='w-full flex flex-col items-center text-white mb-10'>

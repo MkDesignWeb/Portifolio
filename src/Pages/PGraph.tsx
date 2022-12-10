@@ -11,6 +11,7 @@ import { HiChevronDoubleDown } from 'react-icons/hi'
 import { FaUser } from 'react-icons/fa';
 import { SobreMim } from '../Components/SobreMim';
 import { Contato } from '../Components/Contato';
+import { TrabalhosDes } from '../Components/TrabalhosDes';
 
 
 export function PGraph() {
@@ -52,9 +53,8 @@ export function PGraph() {
                     </div>
                 </div>
 
-                    
+                    <TrabalhosDes />
 
-            
             </div>
         </section>
     )
