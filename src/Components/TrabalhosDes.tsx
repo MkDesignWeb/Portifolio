@@ -57,7 +57,7 @@ export function TrabalhosDes(){
                    
            
                    </div>
-                   <div className="w-screen h-screen bg-[#000000ef] fixed top-0 left-0 z-10 " onClick={() => props.Modal()}/>
+                   <div className="w-screen h-screen bg-[#000000ef] fixed top-0 left-0 z-10 " onClick={() => setUrlMoal('')}/>
                    </div>
          
                 ): ''}

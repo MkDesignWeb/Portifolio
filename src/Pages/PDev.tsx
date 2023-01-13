@@ -13,6 +13,8 @@ import { SobreMim } from '../Components/SobreMim';
 import { Contato } from '../Components/Contato';
 import { MinhasEspec } from '../Components/MinhasEspec';
 import { TrabalhosWeb } from '../Components/TrabalhosWeb';
+import { RodaPe } from '../Components/RodaPe';
+import { BotãoTroca } from '../Components/BotãoTroca';
 
 export function PDev() {
 
@@ -20,6 +22,8 @@ export function PDev() {
 
     return (
         <section className='max-w-screen overflow-x-hidden bg-fundo'>
+            <BotãoTroca linkTo='/p-graph' side='right'/>
+
             <img src={brilhoMobile} alt="" className='absolute top-0 right-0 z-10 w-full' />
             <div className="w-full h-auto flex justify-center items-center z-20 relative">
                 <Header desc="Desenvolvedor Front-END focado em React JS" logo={LogoMKW} />
@@ -53,6 +57,8 @@ export function PDev() {
                     <MinhasEspec />
 
                     <TrabalhosWeb />
+
+                    <RodaPe />
 
             </div>
         </section>
