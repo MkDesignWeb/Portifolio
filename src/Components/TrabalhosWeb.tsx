@@ -2,7 +2,7 @@ import { CardWeb } from "./CardWeb";
 
 export function TrabalhosWeb(){
     return(
-        <section className="mt-20 mb-32 relative">
+        <section id="trabalhos" className="mt-20 mb-32 relative">
             <div className='w-full flex flex-col items-center text-white mb-10'>
                 <h1 className="font-Roboto-Medium text-2xl md:text-3xl text-center">Meus <span className="text-primary">Trabalhos</span></h1>
                 <p className="font-Roboto-Light text-sm text-center max-w-xs">De uma olhada nós meu trabalhos mais relevantes</p>

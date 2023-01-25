@@ -6,15 +6,19 @@ import LogoMKW from '../Assets/Logo/Logo MKW.svg'
 
 import { Header } from "../Components/Header";
 import { MainBotton } from '../Components/MainBotton';
-
-import { HiChevronDoubleDown } from 'react-icons/hi'
-import { FaUser } from 'react-icons/fa';
-import { SobreMim } from '../Components/SobreMim';
 import { Contato } from '../Components/Contato';
+import { SobreMim } from '../Components/SobreMim';
 import { MinhasEspec } from '../Components/MinhasEspec';
 import { TrabalhosWeb } from '../Components/TrabalhosWeb';
 import { RodaPe } from '../Components/RodaPe';
 import { BotãoTroca } from '../Components/BotãoTroca';
+
+import { HiChevronDoubleDown } from 'react-icons/hi'
+import { FaUser } from 'react-icons/fa';
+import { AiFillGithub } from 'react-icons/ai'
+import { MdContentPaste } from 'react-icons/md'
+
+import { Link } from 'react-scroll'
 
 export function PDev() {
 
@@ -32,9 +36,13 @@ export function PDev() {
             <div className="h-auto w-full relative z-20 mt-20">
 
                 <nav className='absolute w-full flex flex-wrap justify-center gap-2 z-30 -top-3'>
+                    <Link to='contatos' smooth={true} offset={-150} className="cursor-pointer" >
                     <MainBotton name='Contato' icon={<FaUser />} />
-                    <MainBotton name='GitHub' icon={<FaUser />} />
-                    <MainBotton name='Trabalhos' icon={<FaUser />} />
+                    </Link>
+                    <MainBotton link='https://github.com/MkDesignWeb' name='GitHub' icon={<AiFillGithub />} />
+                    <Link to='trabalhos' smooth={true} className="cursor-pointer">
+                    <MainBotton name='Trabalhos' icon={<MdContentPaste />} />
+                    </Link>
                 </nav>
 
                 <img src={width > 786 ? CurvePc : Curve} alt="" className="h-32 w-full object-cover object-top top-5 lef-0 z-10" />

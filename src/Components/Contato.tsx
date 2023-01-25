@@ -20,7 +20,7 @@ export function Contato(props: props){
 
     return(
         <>
-        <section className='text-white flex flex-col md:flex-row relative'>
+        <section id='contatos' className='text-white flex flex-col md:flex-row relative'>
             <div className={` ${props.side == 'rigth' ? 'md:order-0 text-start' : 'md:order-1 text-end'}`}>
                 <div className={`w-full flex flex-col ${props.side == 'rigth' ? 'items-start' : 'items-end'}`}>
                     <h1 className="font-Roboto-Medium text-3xl ">Entre em <span className="text-primary">contato</span></h1>
@@ -29,12 +29,12 @@ export function Contato(props: props){
 
                 <div className={`flex ${props.side == 'rigth' ? 'justify-start' : 'justify-end'} my-7 gap-2`}>
                     <div className='gap-2 flex flex-col'>
-                    <MainBotton name='Email' icon={<MdEmail />}/>
-                    <MainBotton name='Twitter' icon={<FaTwitter />}/>
+                    <MainBotton link='mailto:mkdesprod@gmail.com' name='Email' icon={<MdEmail />}/>
+                    <MainBotton link='https://twitter.com/MK_Designer1' name='Twitter' icon={<FaTwitter />}/>
                     </div>
                     <div className='gap-2 flex flex-col'>
-                    <MainBotton name='Instagram' icon={<FaInstagram />}/>
-                    <MainBotton name='Linkedin' icon={<FaLinkedin />}/>
+                    <MainBotton link='https://www.instagram.com/matheus.kauan.souza/' name='Instagram' icon={<FaInstagram />}/>
+                    <MainBotton link='https://www.linkedin.com/in/matheus-kauan-2b758a205/' name='Linkedin' icon={<FaLinkedin />}/>
                     </div>
                 </div>
             </div>
