@@ -1,7 +1,37 @@
+import { gql, useQuery } from '@apollo/client';
 import { CardWeb } from "./CardWeb";
 
-export function TrabalhosWeb(){
-    return(
+const GET_CARDS = gql`
+query {
+    webWorking {
+      title
+      description
+      git
+      visit
+      thumb {
+        url
+      }
+    }
+  }
+  
+`
+
+interface cardsWork {
+    webWorking: {
+        title: string,
+        description: string,
+        git: string,
+        visit: string,
+        thumb: {
+            url: string,
+        }
+    }[]
+}
+export function TrabalhosWeb() {
+
+    const { data } = useQuery<cardsWork>(GET_CARDS)
+
+    return (
         <section id="trabalhos" className="mt-20 mb-32 relative">
             <div className='w-full flex flex-col items-center text-white mb-10'>
                 <h1 className="font-Roboto-Medium text-2xl md:text-3xl text-center">Meus <span className="text-primary">Trabalhos</span></h1>
@@ -9,13 +39,13 @@ export function TrabalhosWeb(){
             </div>
 
             <div className="flex justify-center gap-3 mx-3">
-
-            <CardWeb titulo="GMPlanejados" desc="Site expositorio da marcenario GMPlanejados" git="https://github.com/MkDesignWeb/GMPlanejados" link="https://gmplanejados.vercel.app/"/>
-
-            <CardWeb titulo="Portifolio" desc="Portifolio duplo feito por mim" git="asdasdw" link="ad"/>
-            
+                {data?.webWorking.map(webcard => {
+                    return (
+                        <CardWeb thumb={webcard.thumb.url} titulo={webcard.title} desc={webcard.description} git={webcard.git} link={webcard.visit} />
+                    )
+                })}
             </div>
-            
+
         </section>
     )
 }

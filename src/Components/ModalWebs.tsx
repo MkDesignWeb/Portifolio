@@ -5,7 +5,10 @@ import { MdOutlineClose } from "react-icons/md";
 interface Props {
     Modal: Function,
     git?: string,
-    link?: string
+    link?: string,
+    title?: string,
+    desc?: string,
+    thumb?: string
 }
 
 export function ModalWebs(props: Props){
@@ -19,11 +22,11 @@ export function ModalWebs(props: Props){
         <div className='absolute -top-10 right-3 z-30'> <MdOutlineClose size={35} color='#fff' onClick={() => props.Modal()}/> </div>
 
         <div>
-            <div className="w-[11rem] h-24 rounded bg-white" />
+            <img src={props.thumb} className="object-cover w-[11rem] h-24 rounded bg-white" />
 
             <div className="flex flex-col mt-2 gap-2">
-            <strong className="text-white font-Roboto-Light">Portifolio</strong>
-            <p className="text-white font-Roboto-Light text-sm max-w-[11rem]">TESTTETSTETSTASTDTSADT ASDTASTDSAT</p>
+            <strong className="text-white font-Roboto-Light">{props.title}</strong>
+            <p className="text-white font-Roboto-Light text-sm max-w-[11rem]">{props.desc}</p>
             </div>
 
         </div>

@@ -10,7 +10,8 @@ interface props {
     git: string,
     link?: string,
     linkbanner?:string,
-    desc?: string
+    desc?: string,
+    thumb?: string,
     titulo: string
 }
 
@@ -26,7 +27,7 @@ export function CardWeb(props: props) {
         <div className="group flex flex-col w-full md:w-auto md:max-w-none max-w-[11rem] relative after:content-[''] after:absolute after:w-[calc(100%+1rem)] after:h-[calc(100%+1rem)] after:transition-all after:rounded-xl after:border-primary after:-top-2 after:-left-2 after:pointer-events-none  md:after:hover:border-2  transition-all" onClick={() => setModalOn(true)}>
 
 
-        <img src='' className="w-full h-24 md:w-72 md:h-44  rounded-xl overflow-hidden bg-white" />
+        <img src={props.thumb} className="w-full h-24 md:w-72 md:h-44 object-cover border-2 border-white rounded-xl overflow-hidden bg-white" />
         
         {props.git || props.link || props.desc ?
         (<div className='hidden md:block -mt-10 relative opacity-0 md:group-hover:top-0 transition-all md:group-hover:opacity-100 md:group-hover:my-3'>
@@ -55,7 +56,7 @@ export function CardWeb(props: props) {
         </div>
 
         {modalOn && width <= 768 ? (
-            <ModalWebs git={props.git} link={props.link} Modal={closeModal}/>
+            <ModalWebs thumb={props.thumb} title={props.titulo} desc={props.desc} git={props.git} link={props.link} Modal={closeModal}/>
         ) : ''}
 
         </>

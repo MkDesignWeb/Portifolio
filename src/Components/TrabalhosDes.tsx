@@ -1,20 +1,26 @@
 import { gql, useQuery } from "@apollo/client"
 import { useState } from "react"
+
 import { MdOutlineClose } from "react-icons/md"
 
 const GET_IMG = gql`
 query {
-    assets {
-        url
+    designWork(where: {id: "cldez8hni3tp60bls1jfi3qb9"}) {
+        image {
+          url
+        }
       }
-    }
+  }
+  
     
 `
 
 interface AssetsImg {
-    assets: {
-        url: string
-      }[]
+    designWork: {
+        image: {
+          url: string,
+        }[]
+      }
     }
 
 
@@ -33,13 +39,13 @@ export function TrabalhosDes(){
 
           
                 <div className="mx-auto max-w-6xl flex flex-wrap justify-center ">
-                    {data?.assets.map((data) => {
+                    {data?.designWork.image.map((image) => {
                         return(
                         <div className="md:hover:scale-105 md:hover:z-30 relative after:z-30 after:content-[''] after:absolute after:w-[calc(100%+1rem)] after:h-[calc(100%+1rem)] after:transition-all after:rounded-xl after:border-primary after:-top-2 after:-left-2 after:pointer-events-none  md:after:hover:border-2  transition-all"
                         
-                        onClick={() => {setUrlMoal(data.url)}}
+                        onClick={() => {setUrlMoal(image.url)}}
                         >
-                            <img src={data.url} alt="" className="bg-red-600 w-40 h-40 sm:w-52 sm:h-52 object-cover" />
+                            <img src={image.url} alt="" className="bg-white w-40 h-40 sm:w-52 sm:h-52 object-cover" />
                         </div>
                         )
                     })}
@@ -51,7 +57,7 @@ export function TrabalhosDes(){
                    <div className="relative z-40
                    ">
                    
-                   <div className='absolute -top-10 right-0 z-40'> <MdOutlineClose size={35} color='#fff' onClick={() => setUrlMoal('')}/> </div>
+                   <div className='absolute -top-10 right-0 z-40 cursor-pointer'> <MdOutlineClose size={35} color='#fff' onClick={() => setUrlMoal('')}/> </div>
            
                    <img src={UrlModal} alt="" className="max-w-[95vw] max-h-[80vh] md:object-cover"/>
                    
