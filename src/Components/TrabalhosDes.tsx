@@ -41,7 +41,7 @@ export function TrabalhosDes(){
                 <div className="mx-auto max-w-6xl flex flex-wrap justify-center ">
                     {data?.designWork.image.map((image) => {
                         return(
-                        <div className="md:hover:scale-105 md:hover:z-30 relative after:z-30 after:content-[''] after:absolute after:w-[calc(100%+1rem)] after:h-[calc(100%+1rem)] after:transition-all after:rounded-xl after:border-primary after:-top-2 after:-left-2 after:pointer-events-none  md:after:hover:border-2  transition-all"
+                        <div key={image.url} className="md:hover:scale-105 md:hover:z-30 relative after:z-30 after:content-[''] after:absolute after:w-[calc(100%+1rem)] after:h-[calc(100%+1rem)] after:transition-all after:rounded-xl after:border-primary after:-top-2 after:-left-2 after:pointer-events-none  md:after:hover:border-2  transition-all"
                         
                         onClick={() => {setUrlMoal(image.url)}}
                         >

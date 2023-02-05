@@ -4,6 +4,7 @@ import cssIcon from "../Assets/SVG/Css Icon.svg"
 import htmlIcon from "../Assets/SVG/HTML Icon.svg"
 import jsIcon from "../Assets/SVG/Js Icon.svg"
 import tailwindIcon from "../Assets/SVG/tailwind-css-icon.svg"
+import styledComponent from "../Assets/SVG/styled-components.svg"
 import useWindowDimensions from "./windowDimensions";
 
 export function MinhasEspec(){
@@ -22,7 +23,7 @@ export function MinhasEspec(){
 
             <EspecRow esq={htmlIcon} textEsq={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} dir={cssIcon} textDir={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} />     
 
-            <EspecRow esq={tailwindIcon} textEsq={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} dir={tailwindIcon} textDir={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} />
+            <EspecRow esq={tailwindIcon} textEsq={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} dir={styledComponent} textDir={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} />
       
         </section>
     )

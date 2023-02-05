@@ -9,7 +9,6 @@ import { MainBotton } from './MainBotton'
 interface props {
     git: string,
     link?: string,
-    linkbanner?:string,
     desc?: string,
     thumb?: string,
     titulo: string

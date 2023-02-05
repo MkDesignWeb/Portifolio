@@ -29,7 +29,7 @@ export function PGraph() {
 
     return (
         <section className='max-w-screen overflow-x-hidden bg-fundo'>
-            <BotãoTroca linkTo='/p-web' side='left' />
+            <BotãoTroca linkTo='/p-web' nameSide='Designer Gráfico' side='left' />
 
             <img src={brilhoMobile} alt="" className='absolute top-0 right-0 z-10 w-full -scale-x-100' />
             <div className="w-full h-auto flex justify-center items-center z-20 relative">
