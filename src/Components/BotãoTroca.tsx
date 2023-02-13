@@ -15,6 +15,7 @@ export function BotãoTroca(props: props) {
     const [notification, setNotification] = useState(false)
     const location = useLocation()
     
+    
     useEffect(()=>{
         setNotification(true)
         setTimeout(() => {

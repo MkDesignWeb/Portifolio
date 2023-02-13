@@ -30,7 +30,7 @@ export function PDev() {
 
             <img src={brilhoMobile} alt="" className='absolute top-0 right-0 z-10 w-full' />
             <div className="w-full h-auto flex justify-center items-center z-20 relative">
-                <Header desc="Desenvolvedor Front-END focado em React JS" logo={LogoMKW} />
+                <Header desc="Desenvolvedor Front-END focado em React JS" logoEsq={LogoMKW} />
             </div>
 
             <div className="h-auto w-full relative z-20 mt-20">
@@ -57,7 +57,7 @@ export function PDev() {
                             <HiChevronDoubleDown size={23} color='#2e2e2e'/>
                         </div>
                         
-                        <Contato side='left' />
+                        <Contato subTexto='Você pode sempre entrar em contato e conversar diretamente comigo sobre orçamentos e desenvolvimento de sites' side='left' />
 
                     </div>
                 </div>

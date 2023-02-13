@@ -2,7 +2,7 @@ import useWindowDimensions from '../Components/windowDimensions';
 import Curve from '../Assets/SVG/Curve.svg'
 import CurvePc from '../Assets/SVG/Curve-pc.svg'
 import brilhoMobile from '../Assets/SVG/BrilhoMobile.svg'
-import LogoMKW from '../Assets/Logo/Logo MKW.svg'
+import LogoMKG from '../Assets/Logo/Logo MKG.svg'
 
 import { Header } from "../Components/Header";
 import { MainBotton } from '../Components/MainBotton';
@@ -33,7 +33,7 @@ export function PGraph() {
 
             <img src={brilhoMobile} alt="" className='absolute top-0 right-0 z-10 w-full -scale-x-100' />
             <div className="w-full h-auto flex justify-center items-center z-20 relative">
-                <Header desc="Freelancer em Designer Gráfico" logo={LogoMKW} />
+                <Header desc="Freelancer em Designer Gráfico" logoDir={LogoMKG} />
             </div>
 
             <div className="h-auto w-full relative z-20 mt-20">
@@ -60,7 +60,7 @@ export function PGraph() {
                             <HiChevronDoubleDown size={23} color='#2e2e2e' />
                         </div>
 
-                        <Contato side='rigth' />
+                        <Contato subTexto='Você pode sempre entrar em contato com seu designer pelos principais meios de comunicação e pedir já seu orçamento' side='rigth' />
 
                     </div>
                 </div>

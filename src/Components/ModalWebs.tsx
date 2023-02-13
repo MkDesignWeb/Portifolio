@@ -15,7 +15,7 @@ export function ModalWebs(props: Props){
     return(
         <div className="w-screen h-screen fixed z-30 top-0 left-0 flex justify-center items-center ">
       
-        <div className="max-w-[24rem] w-full mx-5 min-h-[16rem] h-auto bg-black-scudary relative z-20 rounded-xl
+        <div className="max-w-[24rem] w-full mx-5 min-h-[16rem] h-auto bg-zinc-900 relative z-20 rounded-xl
         p-7 flex flex-wrap justify-between gap-2
         ">
         

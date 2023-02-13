@@ -59,7 +59,7 @@ export function TrabalhosDes(){
                    
                    <div className='absolute -top-10 right-0 z-40 cursor-pointer'> <MdOutlineClose size={35} color='#fff' onClick={() => setUrlMoal('')}/> </div>
            
-                   <img src={UrlModal} alt="" className="max-w-[95vw] max-h-[80vh] md:object-cover"/>
+                   <img src={UrlModal} alt="" className="max-w-[95vw] max-h-[80vh] border-4 rounded border-zinc-800 md:object-cover"/>
                    
            
                    </div>

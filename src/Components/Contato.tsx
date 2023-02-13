@@ -11,7 +11,8 @@ import { FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
 interface props {
-    side: 'left' | 'rigth' 
+    side: 'left' | 'rigth',
+    subTexto: string,
 }
 
 export function Contato(props: props){
@@ -48,7 +49,7 @@ export function Contato(props: props){
         </section>
 
         <div className='text-white font-Roboto-Light max-w-md text-center mx-auto py-10 md:py-20 opacity-60'>
-            <p>Você pode sempre entrar em contato com seu designer pelos principais meios de comunicação e pedir já seu orçamento</p>
+            <p>{props.subTexto}</p>
         </div>
         </>
     )
