@@ -42,7 +42,9 @@ export function PGraph() {
                     <Link to='contatos' smooth={true} offset={-150} className="cursor-pointer" >
                         <MainBotton name='Contato' icon={<FaUser />} />
                     </Link>
+
                     <MainBotton link='https://www.behance.net/matheuskauan' name='Behance' icon={<SiBehance />} />
+
                     <Link to='trabalhosDes' smooth={true} className="cursor-pointer" >
                         <MainBotton name='Trabalhos' icon={<MdContentPaste />} />
                     </Link>
@@ -53,7 +55,7 @@ export function PGraph() {
                 <div className='bg-black-scudary relative  w-full h-auto'>
                     <div className='relative z-20 px-7 md:px-20 xl:px-40 max-w-[1728px]'>
 
-                        <SobreMim side='rigth' />
+                        <SobreMim text='Trabalho com desenvolvimento de sites para web e Designer gráfico, desde pequeno tenho prática no mundo das edições e manipulações de imagens na web. Tenho muita persistência em aprender novas áreas que tenham um grande impacto visual no cotidiano de todos dentro ou fora da web.' side='rigth' />
 
                         <div className='flex w-full justify-center font-Roboto-Medium  md:mb-5 md:-top-20 -top-10 relative'>
                             <span className='text-x text-[#2e2e2e]'>Veja mais</span>

@@ -2,7 +2,7 @@ import { EspecRow } from "./EspecRow";
 import reactIcon from "../Assets/SVG/React Icon.svg"
 import cssIcon from "../Assets/SVG/Css Icon.svg"
 import htmlIcon from "../Assets/SVG/HTML Icon.svg"
-import jsIcon from "../Assets/SVG/Js Icon.svg"
+import typeScriptIcon from "../Assets/SVG/Typescript Icon.svg"
 import tailwindIcon from "../Assets/SVG/tailwind-css-icon.svg"
 import styledComponent from "../Assets/SVG/styled-components.svg"
 import useWindowDimensions from "./windowDimensions";
@@ -19,11 +19,11 @@ export function MinhasEspec(){
             </div>
 
             <EspecRow esq={reactIcon} textEsq={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."}
-            dir={jsIcon} textDir={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} />
+            dir={typeScriptIcon} textDir={"Linguagem com tipagem adequada para qualquer equipe de desenvolvimento."} />
 
-            <EspecRow esq={htmlIcon} textEsq={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} dir={cssIcon} textDir={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} />     
+            <EspecRow esq={htmlIcon} textEsq={"Domínio na linguagem de marcação utilizada para construção da página na web."} dir={cssIcon} textDir={"Conhecimento na área de estilização da página web com css avançado."} />     
 
-            <EspecRow esq={tailwindIcon} textEsq={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} dir={styledComponent} textDir={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."} />
+            <EspecRow esq={tailwindIcon} textEsq={"Estilização moderna e rápida para acelerar o desenvolvimento web com o TailwindCss. Conhecimento avançado."} dir={styledComponent} textDir={"Tenha o código limpo e totalmente acessível para manutenções com a estilização organizada do Styled Components."} />
       
         </section>
     )

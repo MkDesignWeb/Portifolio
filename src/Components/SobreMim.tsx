@@ -2,7 +2,8 @@ import CharMkW from '../Assets/Img/CharMkW.png'
 import CharMkG from '../Assets/Img/CharMkG.png'
 
 interface props {
-    side: 'left' | 'rigth' 
+    side: 'left' | 'rigth',
+    text: string
 }
 
 export function SobreMim(props: props) {
@@ -14,7 +15,7 @@ export function SobreMim(props: props) {
                     <h1 className="font-Roboto-Medium text-3xl">Sobre <span className="text-primary">mim</span></h1>
                     <p className="font-Roboto-Light text-sm mb-5">Veja um pouco sobre mim</p>
                     <p className="text-sm">
-                        Trabalho com Designer gráfico e desenvolvimento de sites para web com foco na biblioteca ReactJs para criar sites performáticos e com a mais nova tecnologia do mercado. Tenho muita persistência em aprender novas áreas que tenham um grande impacto visual no cotidiano de todos dentro ou fora da web.
+                        {props.text}
                     </p>
                 </div>
 
