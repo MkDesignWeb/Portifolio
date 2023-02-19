@@ -21,7 +21,7 @@ export function Contato(props: props){
 
     return(
         <>
-        <section id='contatos' className='text-white flex flex-col md:flex-row relative'>
+        <section id='contatos' className='text-white flex flex-col md:flex-row relative justify-around'>
             <div className={` ${props.side == 'rigth' ? 'md:order-0 text-start' : 'md:order-1 text-end'}`}>
                 <div className={`w-full flex flex-col ${props.side == 'rigth' ? 'items-start' : 'items-end'}`}>
                     <h1 className="font-Roboto-Medium text-3xl ">Entre em <span className="text-primary">contato</span></h1>

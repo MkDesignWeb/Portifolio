@@ -11,7 +11,8 @@ import { SobreMim } from '../Components/SobreMim';
 import { MinhasEspec } from '../Components/MinhasEspec';
 import { TrabalhosWeb } from '../Components/TrabalhosWeb';
 import { RodaPe } from '../Components/RodaPe';
-import { BotãoTroca } from '../Components/BotãoTroca';
+import { BotaoTroca } from '../Components/BotaoTroca';
+import { BotaoSubir } from '../Components/BotaoSubir';
 
 import { HiChevronDoubleDown } from 'react-icons/hi'
 import { FaUser } from 'react-icons/fa';
@@ -26,7 +27,8 @@ export function PDev() {
 
     return (
         <section className='max-w-screen overflow-x-hidden bg-fundo'>
-            <BotãoTroca linkTo='/p-graph' nameSide="Web Design" side='right'/>
+            <BotaoSubir />
+            <BotaoTroca linkTo='/p-graph' nameSide="Web Design" side='right'/>
 
             <img src={brilhoMobile} alt="" className='absolute top-0 right-0 z-10 w-full' />
             <div className="w-full h-auto flex justify-center items-center z-20 relative">
@@ -48,7 +50,7 @@ export function PDev() {
                 <img src={width > 786 ? CurvePc : Curve} alt="" className="h-32 w-full object-cover object-top top-5 lef-0 z-10" />
 
                 <div className='bg-black-scudary relative  w-full h-auto'>
-                    <div className='relative z-20 px-7 md:px-20 xl:px-40 max-w-[1728px]'>
+                    <div className='relative z-20 px-7 md:px-20 xl:px-40 max-w-[1728px] mx-auto'>
 
                         <SobreMim text='Trabalho com Designer gráfico e desenvolvimento de sites para web com foco na biblioteca ReactJs para criar sites performáticos e com a mais nova tecnologia do mercado. Tenho muita persistência em aprender novas áreas que tenham um grande impacto visual no cotidiano de todos dentro ou fora da web.' side='left'/>
 

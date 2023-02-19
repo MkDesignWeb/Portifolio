@@ -7,10 +7,11 @@ import LogoMKG from '../Assets/Logo/Logo MKG.svg'
 import { Header } from "../Components/Header";
 import { MainBotton } from '../Components/MainBotton';
 import { RodaPe } from '../Components/RodaPe';
-import { BotãoTroca } from '../Components/BotãoTroca';
+import { BotaoTroca } from '../Components/BotaoTroca';
 import { SobreMim } from '../Components/SobreMim';
 import { Contato } from '../Components/Contato';
 import { TrabalhosDes } from '../Components/TrabalhosDes';
+import { BotaoSubir } from '../Components/BotaoSubir';
 
 import { HiChevronDoubleDown } from 'react-icons/hi'
 import { FaUser } from 'react-icons/fa';
@@ -29,7 +30,8 @@ export function PGraph() {
 
     return (
         <section className='max-w-screen overflow-x-hidden bg-fundo'>
-            <BotãoTroca linkTo='/p-web' nameSide='Designer Gráfico' side='left' />
+            <BotaoTroca linkTo='/p-web' nameSide='Designer Gráfico' side='left' />
+            <BotaoSubir />
 
             <img src={brilhoMobile} alt="" className='absolute top-0 right-0 z-10 w-full -scale-x-100' />
             <div className="w-full h-auto flex justify-center items-center z-20 relative">

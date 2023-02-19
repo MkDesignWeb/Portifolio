@@ -9,7 +9,7 @@ interface props {
     nameSide: string
 }
 
-export function BotãoTroca(props: props) {
+export function BotaoTroca(props: props) {
 
     const [BotãoAberto, setBotãoAberto] = useState(false)
     const [notification, setNotification] = useState(false)
