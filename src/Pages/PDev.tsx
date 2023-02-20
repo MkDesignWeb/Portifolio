@@ -52,7 +52,7 @@ export function PDev() {
                 <div className='bg-black-scudary relative  w-full h-auto'>
                     <div className='relative z-20 px-7 md:px-20 xl:px-40 max-w-[1728px] mx-auto'>
 
-                        <SobreMim text='Trabalho com Designer gráfico e desenvolvimento de sites para web com foco na biblioteca ReactJs para criar sites performáticos e com a mais nova tecnologia do mercado. Tenho muita persistência em aprender novas áreas que tenham um grande impacto visual no cotidiano de todos dentro ou fora da web.' side='left'/>
+                        <SobreMim  side='left'/>
 
                         <div className='flex w-full justify-center font-Roboto-Medium  md:mb-5 md:-top-20 -top-10 relative'>
                             <span className='text-x text-[#2e2e2e]'>Veja mais</span>

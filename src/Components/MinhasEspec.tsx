@@ -14,8 +14,8 @@ export function MinhasEspec(){
     return(
         <section className="mt-20">
             <div className='w-full flex flex-col items-center text-white mb-10'>
-                <h1 className="font-Roboto-Medium text-2xl md:text-3xl text-center">Veja minhas <span className="text-primary">especificações</span></h1>
-                <p className="font-Roboto-Light text-sm text-center max-w-xs">{width <= 768 ? 'Toque nas faixas a baixo e veja minhas especificações' : 'Passe o mouse nas faixas a baixo e veja minhas especificações'}</p>
+                <h1 className="font-Roboto-Medium text-2xl md:text-4xl text-center">Veja minhas <span className="text-primary">especificações</span></h1>
+                <p className="font-Roboto-Light text-sm md:text-base text-center max-w-xs">{width <= 768 ? 'Toque nas faixas a baixo e veja minhas especificações' : 'Passe o mouse nas faixas a baixo e veja minhas especificações'}</p>
             </div>
 
             <EspecRow esq={reactIcon} textEsq={"Desemvolvimento de sites com ReactJs. Perfomtico e moderno."}
