@@ -55,7 +55,7 @@ export function PGraph() {
                 <img src={width > 786 ? CurvePc : Curve} alt="" className="h-32 w-full object-cover object-top top-5 lef-0 z-10" />
 
                 <div className='bg-black-scudary relative  w-full h-auto'>
-                    <div className='relative z-20 px-7 md:px-20 xl:px-40 max-w-[1728px]'>
+                    <div className='relative z-20 px-7 md:px-20 xl:px-40 max-w-[1728px] mx-auto '>
 
                         <SobreMim side='rigth' />
 

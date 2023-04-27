@@ -1,5 +1,6 @@
 import { MainBotton } from "./MainBotton";
 import {AiFillGithub} from 'react-icons/ai'
+import { BiLinkAlt } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
 
 interface Props {
@@ -33,7 +34,7 @@ export function ModalWebs(props: Props){
 
         <div className="flex flex-col gap-3">
             {props.git ? (<MainBotton link={props.git} name="GitHub" icon={<AiFillGithub color="#ffff"/>} />) : ''}
-            {props.link ? (<MainBotton link={props.link} name="Visite" icon={<AiFillGithub color="#ffff"/>}/>) : ''}
+            {props.link ? (<MainBotton link={props.link} name="Visite" icon={<BiLinkAlt color='#ffff'/>}/>) : ''}
         </div>
 
         </div>
