@@ -45,7 +45,7 @@ export function PGraph() {
                         <MainBotton name='Contato' icon={<FaUser />} />
                     </Link>
 
-                    <MainBotton link='https://www.behance.net/matheuskauan' name='Behance' icon={<SiBehance />} />
+                    <MainBotton link='https://www.behance.net/MkDesignerG' name='Behance' icon={<SiBehance />} />
 
                     <Link to='trabalhosDes' smooth={true} className="cursor-pointer" >
                         <MainBotton name='Trabalhos' icon={<MdContentPaste />} />
